@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:padding="10dp"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="@color/text_color"
+        android:layout_marginTop="24dp"
+        android:text="Correct Answer" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:backgroundTint="@color/primary_theme"
+            android:id="@+id/ansEditText1"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:hint="J"
+            android:gravity="center_horizontal"
+            android:textColorHint="@color/hint_text_color"
+            android:layout_marginHorizontal="5dp"
+            android:maxLength="1"
+            android:textColor="@color/white"
+            />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/ansEditText2"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:hint="A"
+            android:gravity="center_horizontal"
+            android:textColorHint="@color/hint_text_color"
+            android:layout_marginHorizontal="5dp"
+            android:backgroundTint="@color/primary_theme"
+            android:maxLength="1"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:backgroundTint="@color/primary_theme"
+            android:id="@+id/ansEditText3"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:hint="W"
+            android:gravity="center_horizontal"
+            android:textColorHint="@color/hint_text_color"
+            android:layout_marginHorizontal="5dp"
+            android:maxLength="1"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:backgroundTint="@color/primary_theme"
+            android:id="@+id/ansEditText4"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:hint="A"
+            android:gravity="center_horizontal"
+            android:textColorHint="@color/hint_text_color"
+            android:layout_marginHorizontal="5dp"
+            android:maxLength="1"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:backgroundTint="@color/primary_theme"
+            android:id="@+id/ansEditText5"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:hint="B"
+            android:gravity="center_horizontal"
+            android:textColorHint="@color/hint_text_color"
+            android:layout_marginHorizontal="5dp"
+            android:maxLength="1"/>
+
+        <ImageButton
+            android:id="@+id/resetAnsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_reset_24"
+            android:backgroundTint="@android:color/transparent"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="@color/text_color"
+        android:layout_marginTop="24dp"
+        android:text="The Guess..." />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:backgroundTint="@color/primary_theme"
+            android:id="@+id/guessEditText1"
+            android:layout_width="30dp"
+            android:gravity="center"
+            android:hint="W"
+            android:textColorHint="@color/hint_text_color"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="5dp"
+            android:maxLength="1"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:backgroundTint="@color/primary_theme"
+            android:id="@+id/guessEditText2"
+            android:layout_width="30dp"
+            android:hint="H"
+            android:gravity="center_horizontal"
+            android:textColorHint="@color/hint_text_color"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="5dp"
+            android:maxLength="1"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:backgroundTint="@color/primary_theme"
+            android:id="@+id/guessEditText3"
+            android:layout_width="30dp"
+            android:hint="A"
+            android:gravity="center_horizontal"
+            android:textColorHint="@color/hint_text_color"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="5dp"
+            android:maxLength="1"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:backgroundTint="@color/primary_theme"
+            android:id="@+id/guessEditText4"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:hint="T"
+            android:gravity="center_horizontal"
+            android:textColorHint="@color/hint_text_color"
+            android:layout_marginHorizontal="5dp"
+            android:maxLength="1"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:backgroundTint="@color/primary_theme"
+            android:id="@+id/guessEditText5"
+            android:layout_width="30dp"
+            android:hint="?"
+            android:gravity="center_horizontal"
+            android:textColorHint="@color/hint_text_color"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="5dp"
+            android:maxLength="1"/>
+
+        <ImageButton
+            android:id="@+id/resetGuessButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_reset_24"
+            android:backgroundTint="@android:color/transparent"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/hint_text_color"
+        android:backgroundTint="@color/primary_accent"
+        android:text="Submit"
+        />
+
+    <LinearLayout
+        android:id="@+id/responseContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="24dp"
+        android:visibility="gone"
+        android:padding="13dp"
+        android:background="@drawable/container_bg"
+        android:gravity="center_horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="Response" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/responseText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="28sp"
+                android:layout_marginHorizontal="5dp"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/copyBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/hint_text_color"
+            android:backgroundTint="@color/primary_accent"
+            android:text="Copy"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
